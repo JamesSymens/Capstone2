@@ -53,8 +53,9 @@
             height: 100vh;
             background: linear-gradient(45deg, #ff6b6b, #556270, #ffcc5c, #4ecdc4);
             background-size: 300% 300%;
-            animation: gradientAnimation 6s infinite alternate;
+            animation: gradientAnimation 6s infinite alternate ease-in-out;
         }
+
         footer {
             text-align: center;
         }
@@ -66,6 +67,17 @@
             height: 50px;
             top: 50vh;
         }
+        @keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
 
 
     </style>
